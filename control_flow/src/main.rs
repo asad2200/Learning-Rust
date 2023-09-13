@@ -50,3 +50,86 @@
 
 //     println!("The value of a id {a}.");
 // }
+
+// Loops ------------
+
+// loop keyword
+// fn main(){
+//     loop{
+//         println!("This is the infinite loop!");
+//     }
+// }
+
+// returning value from loop
+// fn main() {
+//     let mut counter = 0;
+
+//     let result = loop {
+//         counter += 1;
+
+//         if counter == 10 {
+//             break counter * 2;
+//         }
+//     };
+
+//     println!("The result is {result}.");
+// }
+
+// loop with label
+// fn main() {
+//     let mut counter = 0;
+//     'counting_up: loop {
+//         println!("Counter : {counter}");
+//         let mut remaining = 10;
+
+//         loop {
+//             println!("Remaining: {remaining}");
+
+//             if remaining == 9 {
+//                 break;
+//             }
+
+//             if counter == 2 {
+//                 break 'counting_up;
+//             }
+
+//             remaining -= 1;
+//         }
+
+//         counter += 1;
+//     }
+
+//     println!("End counter = {counter}.");
+// }
+
+// while loop
+// fn main() {
+//     let mut count = 4;
+
+//     while count != 0 {
+//         println!("Count = {count}");
+
+//         count -= 1;
+//     }
+
+//     println!("End of the Loop..");
+// }
+
+// for loop
+// fn main() {
+//     let a: [i32; 5] = [1, 2, 3, 4, 5];
+//
+//     for element in a {
+//         println!("Value = {element}.");
+//     }
+// }
+
+// Range with for loop
+fn main() {
+    // for number in 1..4 {
+    for number in (1..4).rev() {
+        println!("Number: {number}!");
+    }
+
+    println!("End of the loop....");
+}
